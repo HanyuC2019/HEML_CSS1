@@ -1,0 +1,175 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  width: 980px;
+  margin: 0 auto;
+  height: 100%;
+}
+ul {
+  /* 余白を削除 */
+  margin: 0;
+  padding: 0;
+}
+li {
+  /* リスト先頭の黒丸を削除 */
+  list-style: none;
+}
+
+.header {
+  background-color: #F5B4B3;
+  height: 50px;
+  font-size: 1.5rem;
+}
+/* LOGOホームの反応 */
+.top_menu li {
+  float: left;
+  width: auto;
+}
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+/* 擬似クラス */
+.top_menu li a:hover {
+  text-decoration: underline;
+}
+
+.logo_image {
+  width: 110px;
+  float: left;
+  margin: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 演習2小課題：最上一排點字下去會出現底線 */
+ul.top_menu {
+  float: right;
+}
+/* 演習3-3 */
+.image_area{
+  width: 100%;
+}
+
+/* 8.2カラムのフレームのコーディング(実装) */
+.side_menu{
+  width: 300px;
+  float: left;
+}
+.side_menu li a:hover{
+  opacity: 0.5;
+}
+/* 縦のメニューリスト */
+.side_menu li{
+  background-color: #F5B4B3;
+  height: 6rem;
+  margin-bottom: 10px;
+}
+/* 縦のメニューリストの文字 */
+.side_menu li a{
+  font-size:2rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}
+/* バナーの配置（3-7.marginの相殺） */
+.banner img{
+  width: 100%;
+}
+.banner{
+  margin-top: 20px;
+}
+
+.wrapper{
+  margin-top: 10px;
+}
+/* マウスオーバーしたときだけ透明度が60% */
+.side_menu li:hover{
+  opacity: 0.6;
+}
+
+.banner a:hover {
+  opacity: 0.6;
+}
+/* マウスオーバーしたときだけ透明度が60% */
+.content{
+  width: 660px;
+  margin-left:20px;
+  float: left;
+  font-size: 1.5rem;
+}
+/* 追記 */
+.news{
+  height: 200px;
+  background-color: #FCE8E7;
+  padding: 20px;
+  overflow: scroll;
+  line-height: 2;
+}
+/* 演習4的小課題～有點看不懂啊啊啊 */
+.banner_content {
+  /* 上部のマージンを設定 */
+  margin-top: 10px;
+  /* <table>のように振る舞う */
+  display: table;
+}
+.banner_content p {
+  /* <td>のように振る舞う */
+  display: table-cell;
+}
+.banner_content p img {
+  /* 画像サイズの修正 */
+  width: 100%;
+}
+
+/* footer */
+.footer{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  bottom: 0;
+  background-color: #4D4D4D;
+  display: table;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* .containerに対してmin-height: 100%と、基準を示すposition: relativeを指定します。 */
+.container {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+
+/* business */
+.image_area{
+  width: 100%;
+}
+.point{
+  background-color: #FCECEC;
+}
+.point a{
+  color: #4D4D4D;
+}
+/* business分頁後 標題反白 */
+.side_menu .point{
+  background-color: #FCECEC;
+}
+.side_menu .point a{
+  color: #4D4D4D;
+}
